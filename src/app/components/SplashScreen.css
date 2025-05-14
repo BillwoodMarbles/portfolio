@@ -1,0 +1,54 @@
+.logo-container {
+  display: inline-block;
+  /* -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  /* mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );  */
+  -webkit-mask-size: 200%; /* Double the size for animation */
+  mask-size: 200%;
+  /* -webkit-mask-position: 0% 0%;
+  mask-position: 0% 0%; */
+  /* animation: swipeMask 1s forwards;  */
+  /* animation-delay: 1s; */
+}
+
+@keyframes swipeMask {
+  0% {
+    -webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+  }
+  100% {
+    -webkit-mask-position: 100% 0%;
+    mask-position: 100% 0%;
+  }
+}
+
+.logo-container {
+  display: inline-block;
+}
+/* .logo-container svg {
+  animation: scaleUp 2s cubic-bezier(0.5, 0, 1, 1) forwards;
+  animation-delay: 1s;
+  animation-duration: 3s;
+} */
+
+@keyframes scaleUp {
+  0% {
+    width: 200px; /* Initial width */
+    height: 200px; /* Initial height */
+  }
+  100% {
+    width: 50000px; /* Final width */
+    height: 50000px; /* Final height */
+  }
+}
